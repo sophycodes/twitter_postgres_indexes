@@ -16,6 +16,7 @@ echo '==========================================================================
 echo 'load pg_denormalized'
 echo '================================================================================'
 # FIXME: copy your solution to the previous problem here
+time echo "$files" | parallel ./load_denormalized.sh
 
 # NOTE:
 # I have removed the pg_normalized code from this repo.
@@ -27,3 +28,4 @@ echo '==========================================================================
 echo 'load pg_normalized_batch'
 echo '================================================================================'
 # FIXME: copy your solution to the previous problem here
+time echo "$files" | parallel ./load_normalized_batch.sh
